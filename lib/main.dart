@@ -5,6 +5,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 import 'package:pwc_furniture/components/horizontal_listview.dart';
 import 'package:pwc_furniture/components/products.dart';
 import 'package:pwc_furniture/pages/cart_shp.dart';
+import 'package:pwc_furniture/pages/unityPage.dart';
 
 
 void main() {
@@ -67,9 +68,15 @@ class _HomePageState extends State<HomePage> {
                 Icons.camera_alt,
                 color: Colors.white,
               ),
-              onPressed: () {
 
-              })
+              //calling vr unity part
+
+              onPressed: ()
+
+               async {
+                 Navigator.of(context).push((MaterialPageRoute(builder: (BuildContext context) => UnityTestingWrapper() )));
+
+              },)
         ],
       ),
       drawer: new Drawer(
